@@ -249,7 +249,7 @@ class _TransactionPageState extends State<TransactionPage> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Text(
-                          "${isIncome ? "+" : "-"} \$${t.amount}",
+                          "${isIncome ? "+" : "-"} ${t.amount} MAD",
                           style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,

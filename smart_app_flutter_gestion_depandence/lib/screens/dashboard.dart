@@ -168,7 +168,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       const SizedBox(height: 10),
 
                       Text(
-                        "\$${(income - expense).toStringAsFixed(2)}",
+                        "${(income - expense).toStringAsFixed(2)} MAD",
 
                         style: const TextStyle(
                           color: Colors.white,
@@ -186,7 +186,7 @@ class _DashboardPageState extends State<DashboardPage> {
                         children: [
 
                           Text(
-                            "Income\n\$${income.toStringAsFixed(2)}",
+                            "Income\n${income.toStringAsFixed(2)} MAD",
 
                             style: const TextStyle(
                               color: Colors.white70,
@@ -194,7 +194,7 @@ class _DashboardPageState extends State<DashboardPage> {
                           ),
 
                           Text(
-                            "Expense\n\$${expense.toStringAsFixed(2)}",
+                            "Expense\n${expense.toStringAsFixed(2)} MAD",
 
                             textAlign: TextAlign.right,
 
@@ -267,7 +267,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       const SizedBox(height: 10),
 
                       Text(
-                        "\$${expense.toStringAsFixed(2)} / \$${monthlyBudget.toStringAsFixed(2)}",
+                        "${expense.toStringAsFixed(2)} MAD / ${monthlyBudget.toStringAsFixed(2)} MAD",
 
                         style: TextStyle(
                           color:
@@ -452,7 +452,7 @@ class _DashboardPageState extends State<DashboardPage> {
                           subtitle: Text(t.date),
 
                           trailing: Text(
-                            "${t.type == "INCOME" ? "+" : "-"} \$${t.amount}",
+                            "${t.type == "INCOME" ? "+" : "-"} ${t.amount} MAD",
 
                             style: TextStyle(
                               fontWeight:
@@ -513,7 +513,7 @@ class _DashboardPageState extends State<DashboardPage> {
           const SizedBox(height: 6),
 
           Text(
-            "\$${value.toStringAsFixed(2)}",
+            "${value.toStringAsFixed(2)} MAD",
 
             style: const TextStyle(
               fontSize: 22,
