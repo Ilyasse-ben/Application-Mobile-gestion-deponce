@@ -88,8 +88,8 @@ flutter run
 ---
 
 ## 👨‍💻 Développé par
-- **Abd Latif SIDI MED NABGHA**
-- **Ilyasse BEN TALEB**
-- **Omar KHABOU**
+- **SIDI MED NABGHA Abd Latif**
+- **BEN TALEB Ilyasse**
+- **KHABOU Omar**
 
-Projet développé pour faciliter la gestion financière au quotidien. Contributions et améliorations bienvenues !
+Projet de fin d'année pour le cours "développement Mobile" à l'ENSET Mohammedia - Morocco
