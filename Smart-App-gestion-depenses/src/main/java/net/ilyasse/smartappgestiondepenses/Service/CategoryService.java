@@ -10,18 +10,20 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class CategoryService {
-    @Autowired
+public class CategoryService implements ICategoryService{
     private final CategoryRepository categoryRepository;
 
+    @Override
     public List<Category> getAll() {
         return categoryRepository.findAll();
     }
 
+    @Override
     public Category create(Category category) {
         return categoryRepository.save(category);
     }
 
+    @Override
     public void delete(Long id) {
         categoryRepository.deleteById(id);
     }
