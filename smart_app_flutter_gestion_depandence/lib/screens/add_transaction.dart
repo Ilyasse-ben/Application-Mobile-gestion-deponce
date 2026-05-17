@@ -32,20 +32,24 @@ class _AddTransactionPageState extends State<AddTransactionPage> {
         "date": selectedDate.toIso8601String().split("T")[0],
       });
 
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text("Transaction added successfully")),
-        );
+      if (!mounted) return;
 
-        Navigator.pop(context, true);
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Transaction added successfully")),
+      );
+
+      Navigator.pop(context, true);
     } catch (e) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(SnackBar(content: Text(e.toString())));
+      if (!mounted) return;
+      
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(e.toString())),
+      );
+    } finally {
+      if (mounted) {
+        setState(() => isLoading = false);
+      }
     }
-
-    setState(() => isLoading = false);
   }
 
   @override
@@ -92,7 +96,7 @@ class _AddTransactionPageState extends State<AddTransactionPage> {
 
               // TYPE
               DropdownButtonFormField<String>(
-                value: type,
+                initialValue: type,
 
                 items: const [
                   DropdownMenuItem(value: "INCOME", child: Text("Income")),

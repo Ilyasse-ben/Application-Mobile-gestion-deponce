@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Bean;
 import java.time.LocalDate;
 
 @SpringBootApplication
-public class ainSmartAppGestionDepensesApplication {
+public class SmartAppGestionDepensesApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SmartAppGestionDepensesApplication.class, args);
