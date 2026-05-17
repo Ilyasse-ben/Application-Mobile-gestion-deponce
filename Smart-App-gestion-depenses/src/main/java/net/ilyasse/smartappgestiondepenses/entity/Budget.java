@@ -11,6 +11,7 @@ public class Budget {
 
     private double amount;
 
+    @Column(name = "budget_month")
     private String month;
 
     public Budget() {
