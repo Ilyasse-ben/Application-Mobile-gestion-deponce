@@ -1,0 +1,15 @@
+# Ignore Flutter platform-specific generated directories from GitHub language statistics
+smart_app_flutter_gestion_depandence/ios/** linguist-generated=true
+smart_app_flutter_gestion_depandence/android/** linguist-generated=true
+smart_app_flutter_gestion_depandence/linux/** linguist-generated=true
+smart_app_flutter_gestion_depandence/macos/** linguist-generated=true
+smart_app_flutter_gestion_depandence/windows/** linguist-generated=true
+smart_app_flutter_gestion_depandence/web/** linguist-generated=true
+
+# Ignore Maven wrapper scripts
+Smart-App-gestion-depenses/.mvn/** linguist-generated=true
+Smart-App-gestion-depenses/mvnw linguist-generated=true
+Smart-App-gestion-depenses/mvnw.cmd linguist-generated=true
+
+# Ignore IDE files
+.idea/** linguist-generated=true
