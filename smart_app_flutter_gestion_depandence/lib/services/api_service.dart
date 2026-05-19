@@ -9,9 +9,6 @@ class ApiService {
   // ANDROID EMULATOR
   static const String baseUrl = "http://localhost:8080/api";
 
-  // PHYSICAL DEVICE
-  // static const String baseUrl =
-  // "http://192.168.X.X:8080/api";
 
   /*
    * GET ALL TRANSACTIONS
